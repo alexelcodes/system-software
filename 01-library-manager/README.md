@@ -12,20 +12,22 @@
 
 ## Project Overview
 
-In this lab, I created a simple **Library Manager** application in C that manages a collection of books. The program allows the user to perform several actions such as adding, deleting, and loaning books, as well as listing available books and searching for a book by ID. I also implemented file operations to save the state of the library to a file.
+This project implements a **Library Manager** in C with basic CRUD operations for book records.
+The application uses file I/O to persist data and supports listing, searching, loaning, and deleting entries.
 
-The project was built using a **Makefile** to manage the build process. I used **preprocessor directives** to conditionally include or exclude parts of the code.
+The project is built using a **Makefile** to manage the build process.
+**Preprocessor directives** are used to conditionally include or exclude parts of the code.
 
 ### Key Features:
 
 - **Library Management**: Add, delete, list, and manage books.
 - **File Operations**: Save and load the library data from a file.
-- **Makefile Build**: Used Makefile to control the build process.
+- **Makefile Build**: Built using a Makefile-based build process.
 
 ## Directory Structure
 
 ```
-lab-01-library-manager/
+01-library-manager/
 │
 ├── file_operations.c     # Functions for file I/O
 ├── file_operations.h     # File I/O function declarations
@@ -34,7 +36,7 @@ lab-01-library-manager/
 ├── library.h             # Library management functions
 ├── main.c                # Main program logic
 ├── Makefile              # Build configuration file
-└── README.md             # Lab overview and instructions
+└── README.md             # Project overview and instructions
 ```
 
 ## Source Files
@@ -74,7 +76,7 @@ gcc --version
 1. **Navigate to the project root directory:**
 
    ```bash
-   cd lab-01-library-manager
+   cd 01-library-manager
    ```
 
 2. **Compile the program using Makefile:**
