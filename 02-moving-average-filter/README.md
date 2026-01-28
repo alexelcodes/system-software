@@ -23,7 +23,7 @@ Additionally, Python scripts are included to fetch the latest temperature data a
 ## Directory Structure
 
 ```
-lab-02-moving-average-filter/
+02-moving-average-filter/
 │
 ├── data/                   # Contains input and output CSV files
 │ ├── temperature_data.csv  # Input data file
@@ -124,7 +124,7 @@ cmake --version
 ### Navigate to the project root directory:
 
 ```bash
-cd lab-02-moving-average-filter
+cd 02-moving-average-filter
 ```
 
 ### Install Required Dependencies
@@ -185,7 +185,7 @@ The main program reads temperature data from `temperature_data.csv`, applies a `
 
 ### Fetch Current Data
 
-To get the latest temperature readings, you need to run the following Python script from the root folder of the project (e.g., `lab-02-moving-average-filter`):
+To get the latest temperature readings, you need to run the following Python script from the root folder of the project (e.g., `02-moving-average-filter`):
 
 ```bash
 python scripts/fetch_data.py
@@ -195,7 +195,7 @@ This script fetches current temperature data from an online weather API for a sp
 
 ### Running the Program:
 
-To build and run the program with the default settings (using the `Moving Average filter`), navigate to the `lab-02-moving-average-filter/build` folder and use the following command:
+To build and run the program with the default settings (using the `Moving Average filter`), navigate to the `02-moving-average-filter/build` folder and use the following command:
 
 ```bash
 make run
@@ -221,7 +221,7 @@ make low
 
 To visualize the filtered temperature data, you can use the plot_data.py script located in the scripts directory. This script generates a plot of the original and filtered temperature readings.
 
-Make sure you are in the root folder of the project (`lab-02-moving-average-filter`) before running the script:
+Make sure you are in the root folder of the project (`02-moving-average-filter`) before running the script:
 
 ```bash
 python scripts/plot_data.py
@@ -235,7 +235,7 @@ This will create a plot based on the data in filtered_data.csv, allowing you to 
 
 ## Cleaning Up
 
-To clean the build artifacts and executable files, navigate to the `lab-02-moving-average-filter/build` folder and run the following command:
+To clean the build artifacts and executable files, navigate to the `02-moving-average-filter/build` folder and run the following command:
 
 ```bash
 make clean_all

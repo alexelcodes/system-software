@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Project name
-project(Lab3)
+project(ma_lpf_filter)
 
 # Set C standard
 set(CMAKE_C_STANDARD 11)
