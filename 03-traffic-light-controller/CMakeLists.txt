@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Project name
-project(Lab4)
+project(traffic_light_controller)
 
 # Set C standard
 set(CMAKE_C_STANDARD 99)

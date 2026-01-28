@@ -22,7 +22,7 @@ The program runs in an infinite loop, managing transitions and responding to but
 ## Directory Structure
 
 ```
-lab-03-traffic-light-controller/
+03-traffic-light-controller/
 │
 ├── include/                # Header files
 │ ├── error_codes.h         # Error code definitions
