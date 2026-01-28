@@ -29,7 +29,7 @@
 # Build artifacts (optional, if you have a build/ folder)
 build/
 
-# Ignore compiled binaries by default (for lab-01-library-manager)
+# Ignore compiled binaries by default (for 01-library-manager)
 library_app
 
 # CMake generated files
