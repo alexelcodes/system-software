@@ -1,27 +1,26 @@
-# System Software (C Programming Projects)
+# System Software (C Programming)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-C-blue" alt="C"/>
-  <img src="https://img.shields.io/badge/Build-Makefile-informational" alt="Makefile"/>
-  <img src="https://img.shields.io/badge/Build-CMake-informational" alt="CMake"/>
+  <img src="https://img.shields.io/badge/Build-Makefile%20%7C%20CMake-slateblue" />
   <img src="https://img.shields.io/badge/Scripting-Python-yellowgreen" alt="Python"/>
   <img src="https://img.shields.io/badge/Data-CSV-orange" alt="CSV"/>
 </p>
 
 ## Overview
 
-This repository contains the projects and solutions for the **System Software** course, which spans a semester and covers various aspects of system software development, including file handling, data processing, and simulation systems. The course focuses on programming in C, and each lab is designed to strengthen the understanding of fundamental concepts such as data structures, memory management, and hardware interaction.
+This repository contains a collection of **C-based system software projects** focused on file I/O, data processing, and control-oriented logic, demonstrating practical application of core C concepts such as data structures and memory management.
 
 ## Topics Covered
 
 - File I/O and data persistence in C
 - Structs, arrays, and memory management
-- Data smoothing and filters (Moving Average, Low-Pass)
-- Basic CMake and Makefile usage
-- Python scripting for data processing and visualization
-- State machines and simulation of control systems
+- Data smoothing filters (moving average, low-pass)
+- Makefile and CMake-based builds
+- Python scripting for post-processing and visualization
+- State machines and control logic simulation
 
-The course includes three primary labs that involve the development of:
+The repository includes three main projects:
 
 1. A **Library Manager** application for managing book records with file I/O operations.
 2. A **Moving Average Filter** to process temperature data from CSV files using smoothing techniques.
@@ -29,48 +28,48 @@ The course includes three primary labs that involve the development of:
 
 ## Table of Contents
 
-- [Lab 1: Library Manager](#lab-1-library-manager)
-- [Lab 2: Moving Average Filter](#lab-2-moving-average-filter)
-- [Lab 3: Traffic Light Controller](#lab-3-traffic-light-controller)
+- [Project 1: Library Manager](#project-1-library-manager)
+- [Project 2: Moving Average and Low-Pass Filtering](#project-2-moving-average-and-low-pass-filtering)
+- [Project 3: Traffic Light Controller](#project-3-traffic-light-controller)
 - [Building the Projects](#building-the-projects)
 
-## Lab 1: Library Manager
+## Project 1: Library Manager
 
 ### Project Overview
 
-In **Lab 1**, I developed a simple **Library Manager** application in C to manage a collection of books. The program allows the user to perform various actions such as adding, deleting, and loaning books, as well as listing available books and searching for a book by ID. It also includes file operations to save the state of the library to a file.
+This project implements a **Library Manager** in C that manages a collection of books, providing basic CRUD functionality with persistent storage via file I/O.
 
 ### Key Features:
 
 - Add, delete, loan, and search for books
 - Save and load library data from a file
-- Built with a **Makefile** for managing the build process
+- Built using a **Makefile**
 
-**[See Lab 1 Details](lab-01-library-manager/README.md)**
+**[Detailed README](01-library-manager/README.md)**
 
 ---
 
-## Lab 2: Moving Average Filter
+## Project 2: Moving Average and Low-Pass Filtering
 
 ### Project Overview
 
-In **Lab 2**, I created a program to apply **Moving Average** and **Low-Pass Filters** to temperature data stored in CSV files. The program processes temperature data for a specified location and applies smoothing techniques to the data. The filtered results are saved in a new CSV file.
+This project applies **moving average** and **low-pass** filters to temperature data stored in CSV files, smoothing noisy measurements and exporting the results for further analysis.
 
 ### Key Features:
 
-- Applies **Moving Average** and **Low-Pass Filters**
-- Fetches real-time temperature data from a weather API
-- Plots original and filtered data using Python scripts
+- Moving average and low-pass filtering
+- CSV-based input and output
+- Python scripts for plotting and result comparison
 
-**[See Lab 2 Details](lab-02-moving-average-filter/README.md)**
+**[Detailed README](02-moving-average-filter/README.md)**
 
 ---
 
-## Lab 3: Traffic Light Controller
+## Project 3: Traffic Light Controller
 
 ### Project Overview
 
-In **Lab 3**, I developed a traffic light simulation system that manages the states of a traffic light, including **RED**, **YELLOW**, **GREEN**, and special periods like **BLINKING YELLOW** and **OFF** during the night. The system also responds to pedestrian requests by changing to the **GREEN** light for pedestrian crossings.
+This project implements a traffic light simulation system that manages traffic light states **(RED, YELLOW, GREEN)** as well as special periods such as **BLINKING YELLOW** and **OFF** during night operation. The system also handles pedestrian requests by switching to **GREEN** for crossings.
 
 ### Key Features:
 
@@ -78,14 +77,10 @@ In **Lab 3**, I developed a traffic light simulation system that manages the sta
 - Handles **pedestrian requests** (button press)
 - Supports **night period** and **blinking yellow transitions**
 
-**[See Lab 3 Details](lab-03-traffic-light-controller/README.md)**
+**[Detailed README](03-traffic-light-controller/README.md)**
 
 ---
 
 ## Building the Projects
 
-For build and run instructions, refer to each lab’s dedicated `README.md` file.
-
----
-
-Feel free to explore each lab's folder for more detailed documentation and source code.
+Build and usage instructions are provided in each project’s dedicated `README.md`.
