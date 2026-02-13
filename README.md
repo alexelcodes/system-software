@@ -9,78 +9,58 @@
 
 ## Overview
 
-This repository contains a collection of **C-based system software projects** focused on file I/O, data processing, and control-oriented logic, demonstrating practical application of core C concepts such as data structures and memory management.
+This repository contains a set of **C-based system software projects** focused on low-level programming, file I/O, data processing, and control logic.
+
+The goal is to practice practical C development: working with memory, structs, files, simple algorithms, and small standalone tools.
 
 ## Topics Covered
 
-- File I/O and data persistence in C
+- File I/O and persistent storage
 - Structs, arrays, and memory management
-- Data smoothing filters (moving average, low-pass)
-- Makefile and CMake-based builds
-- Python scripting for post-processing and visualization
-- State machines and control logic simulation
+- Data filtering and signal smoothing
+- State machines and control logic
+- Makefile and CMake build systems
+- Python scripts for visualization
 
-The repository includes three main projects:
+## Projects
 
-1. A **Library Manager** application for managing book records with file I/O operations.
-2. A **Moving Average Filter** to process temperature data from CSV files using smoothing techniques.
-3. A **Traffic Light Controller** that simulates traffic light operations with various states and pedestrian request handling.
+### [Library Manager](01-library-manager/)
 
-## Table of Contents
+Command-line **library management system written in C** that demonstrates structured data handling and persistent storage using file I/O.  
+The application manages a small database of books and supports basic CRUD-style operations.
 
-- [Project 1: Library Manager](#project-1-library-manager)
-- [Project 2: Moving Average and Low-Pass Filtering](#project-2-moving-average-and-low-pass-filtering)
-- [Project 3: Traffic Light Controller](#project-3-traffic-light-controller)
-- [Building the Projects](#building-the-projects)
+**Features**
 
-## Project 1: Library Manager
-
-### Project Overview
-
-This project implements a **Library Manager** in C that manages a collection of books, providing basic CRUD functionality with persistent storage via file I/O.
-
-### Key Features:
-
-- Add, delete, loan, and search for books
-- Save and load library data from a file
-- Built using a **Makefile**
-
-**[Detailed README](01-library-manager/README.md)**
+- Add, delete, search, and loan books
+- Store records using structs
+- Persistent save/load from file
+- Built with Makefile
 
 ---
 
-## Project 2: Moving Average and Low-Pass Filtering
+### [Moving Average and Low-Pass Filtering](02-moving-average-filter/)
 
-### Project Overview
+A **data processing tool for smoothing temperature measurements** using moving average and low-pass filters.  
+The project focuses on CSV parsing, numerical processing, and implementing basic signal filtering algorithms in pure C.
 
-This project applies **moving average** and **low-pass** filters to temperature data stored in CSV files, smoothing noisy measurements and exporting the results for further analysis.
+**Features**
 
-### Key Features:
-
-- Moving average and low-pass filtering
-- CSV-based input and output
-- Python scripts for plotting and result comparison
-
-**[Detailed README](02-moving-average-filter/README.md)**
+- Read and write CSV datasets
+- Moving average and low-pass filtering algorithms
+- Noise reduction for sensor data
+- Python scripts for plotting and comparison
 
 ---
 
-## Project 3: Traffic Light Controller
+### [Traffic Light Controller](03-traffic-light-controller/)
 
-### Project Overview
+A **state-machine–based traffic light simulation** that models real intersection behavior.  
+The system manages timed transitions, pedestrian requests, and night modes while demonstrating control logic and finite state machines in C.
 
-This project implements a traffic light simulation system that manages traffic light states **(RED, YELLOW, GREEN)** as well as special periods such as **BLINKING YELLOW** and **OFF** during night operation. The system also handles pedestrian requests by switching to **GREEN** for crossings.
+**Features**
 
-### Key Features:
-
-- Simulates **traffic light state transitions**
-- Handles **pedestrian requests** (button press)
-- Supports **night period** and **blinking yellow transitions**
-
-**[Detailed README](03-traffic-light-controller/README.md)**
-
----
-
-## Building the Projects
-
-Build and usage instructions are provided in each project’s dedicated `README.md`.
+- Finite state machine implementation
+- Timed RED / YELLOW / GREEN transitions
+- Pedestrian button handling
+- Night mode with blinking yellow
+- Built with CMake/Makefile
